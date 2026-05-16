@@ -133,10 +133,13 @@ Act as an expert systems engineer specializing in low-overhead bare-metal Rust. 
 
 ### PROMPT 2: STRESS-TESTING COMPILER ARCHITECTURE
 ```text
+
+
 "Analyze this Rust function against low-latency execution constraints (<10ms). Calculate potential performance bottlenecks regarding memory layout alignment. Explain how the borrow checker will handle references under high concurrency, and provide the optimization matrix to prevent thread blockages. Code:" [Insert your code here]
 ```
 
 ### MODULE 5: SOVEREIGNTY & DEEP TECH LEADERSHIP
+```text
 
 ​Mastering Rust using this hybrid method ensures you are not just a coder, but a Systems Architect capable of designing autonomous, high-performance infrastructure.
 ​The Code belongs to you.
@@ -144,9 +147,11 @@ Act as an expert systems engineer specializing in low-overhead bare-metal Rust. 
 ​The IA is just your technician.
 ```
 
+```text
 ​// ============================================================================
 // SYSTEMS METADATA & INTELLECTUAL PROPERTY REPOSITORY
 // ============================================================================
+```
 
 pub struct AxiomArchitectMetadata {
     pub chief_architect: &'static str,

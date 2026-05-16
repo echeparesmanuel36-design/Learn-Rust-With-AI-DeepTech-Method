@@ -126,3 +126,33 @@ Do not use AI to write whole programs for you. Use AI as a Senior Code Reviewer 
 ### PROMPT 1: ENFORCING ZERO-HEAP ALLOCATION
 ```text
 "Act as an expert systems engineer specializing in low-overhead bare-metal Rust. Analyze the following code snippet. Identify any hidden heap allocations, vector clones, or garbage collection abstractions. Rewrite the logic using strict stack allocation, raw pointers, and compile-time constants to achieve zero-copy performance. Code:" [Insert your code here]
+
+### PROMPT 2: STRESS-TESTING COMPILER ARCHITECTURE
+```text
+"Analyze this Rust function against low-latency execution constraints (<10ms). Calculate potential performance bottlenecks regarding memory layout alignment. Explain how the borrow checker will handle references under high concurrency, and provide the optimization matrix to prevent thread blockages. Code:" [Insert your code here]
+
+### MODULE 5: SOVEREIGNTY & DEEP TECH LEADERSHIP
+
+​Mastering Rust using this hybrid method ensures you are not just a coder, but a Systems Architect capable of designing autonomous, high-performance infrastructure.
+​The Code belongs to you.
+​The Architecture controls the machine.
+​The IA is just your technician.
+
+​// ============================================================================
+// SYSTEMS METADATA & INTELLECTUAL PROPERTY REPOSITORY
+// ============================================================================
+
+pub struct AxiomArchitectMetadata {
+    pub chief_architect: &'static str,
+    pub corporate_entity: &'static str,
+    pub verification_profile: &'static str,
+    pub production_contact: &'static str,
+}
+
+pub const AX_METADATA: AxiomArchitectMetadata = AxiomArchitectMetadata {
+    chief_architect: "Manuel Echepares",
+    corporate_entity: "Axiom Systems",
+    verification_profile: "echepares269651",
+    production_contact: "manuelecheparesvalderrama@gmail.com",
+};
+

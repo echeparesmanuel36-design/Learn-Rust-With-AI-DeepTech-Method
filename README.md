@@ -118,6 +118,9 @@ impl HardwareDataStream {
         }
     }
 }
+```
+ 
+
 
 ## MODULE 4: THE AI CO-PILOT PROMPT MATRIX
 

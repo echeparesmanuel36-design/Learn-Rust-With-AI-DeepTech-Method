@@ -118,3 +118,11 @@ impl HardwareDataStream {
         }
     }
 }
+
+## MODULE 4: THE AI CO-PILOT PROMPT MATRIX
+
+Do not use AI to write whole programs for you. Use AI as a Senior Code Reviewer to enforce systems-level discipline. Copy and paste the following operational prompts into standard LLMs to guide your development:
+
+### PROMPT 1: ENFORCING ZERO-HEAP ALLOCATION
+```text
+"Act as an expert systems engineer specializing in low-overhead bare-metal Rust. Analyze the following code snippet. Identify any hidden heap allocations, vector clones, or garbage collection abstractions. Rewrite the logic using strict stack allocation, raw pointers, and compile-time constants to achieve zero-copy performance. Code:" [Insert your code here]

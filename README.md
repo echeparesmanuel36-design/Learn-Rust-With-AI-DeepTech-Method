@@ -17,3 +17,17 @@ Before writing code, you must understand how Rust interacts directly with physic
 * **The `pub` Keyword (The Connectors):** In Rust, everything is locked and private by default. When you see `pub`, you are exposing a public connector on your engine casing so external modules (like an AI camera stream or an AR glass layer) can hardware-link into your logic.
 
 ---
+
+## MODULE 2: LOW-LEVEL HARDWARE PERFORMANCE FORMULAS
+
+To evaluate if your code is running at true bare-metal performance, you must understand the mathematical limits of data throughput.
+
+### 1. Core Processing Velocity Formula
+Processing Velocity = Buffer Size (in bytes) / Execution Time (in microseconds)
+
+### 2. Latency Jitter Constraint Formula
+Maximum Allowable Allocation Jitter < Hardware Delta Time - Network Delta Time
+
+If your AI co-pilot generates code that utilizes heap allocations inside a rendering loop, these equations fail, and execution latency will spike past the critical 20ms human perception boundary.
+
+---

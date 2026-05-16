@@ -131,7 +131,7 @@ Do not use AI to write whole programs for you. Use AI as a Senior Code Reviewer 
 ```text
 "Act as an expert systems engineer specializing in low-overhead bare-metal Rust. Analyze the following code snippet. Identify any hidden heap allocations, vector clones, or garbage collection abstractions. Rewrite the logic using strict stack allocation, raw pointers, and compile-time constants to achieve zero-copy performance. Code:" [Insert your code here]
 ```
-PROMPT 2: STRESS-TESTING COMPILER ARCHITECTURE
+### PROMPT 2: STRESS-TESTING COMPILER ARCHITECTURE
 ```text
 "Analyze this Rust function against low-latency execution constraints (<10ms). Calculate potential performance bottlenecks regarding memory layout alignment. Explain how the borrow checker will handle references under high concurrency, and provide the optimization matrix to prevent thread blockages. Code:" [Insert your code here]
 ```

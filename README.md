@@ -61,3 +61,82 @@ impl HardwareDataStream {
         }
     }
 }
+
+// ============================================================================
+// AXIOM SYSTEMS - DEEP TECH ACADEMY METHOD
+// MODULE 3 & 4: ARCHITECTURAL BREAKDOWN AND PROMPT MATRIX
+// ============================================================================
+
+/*
+------------------------------------------------------------------------------
+LINE-BY-LINE ARCHITECTURAL BREAKDOWN:
+------------------------------------------------------------------------------
+* #[repr(C)]: 
+  Forces the compiler to organize the bytes exactly like standard hardware 
+  drivers do, preventing the Operating System from shifting things around.
+
+* pub struct HardwareDataStream: 
+  Creates a public blueprint. The `pub` keyword makes this structure 
+  visible and linkable to external systems.
+
+* NonNull<u8>: 
+  A raw pointer that points directly to a real physical memory address. 
+  It guaranteed by the type system to never be null, preventing common 
+  software crashes and memory panics.
+
+* pub fn link_stream: 
+  A public function that acts as the execution bridge to initialize the 
+  physical memory layout instantly without copying bytes (Zero-Copy execution).
+*/
+
+/*
+------------------------------------------------------------------------------
+🤖 MODULE 4: THE AI CO-PILOT PROMPT MATRIX
+------------------------------------------------------------------------------
+Do not use AI to write whole programs for you. Use AI as a Senior Code Reviewer 
+to enforce systems-level discipline. Copy and paste the following operational 
+prompts into standard LLMs to guide your development:
+
+PROMPT 1: ENFORCING ZERO-HEAP ALLOCATION
+"Act as an expert systems engineer specializing in low-overhead bare-metal Rust. 
+Analyze the following code snippet. Identify any hidden heap allocations, 
+vector clones, or garbage collection abstractions. Rewrite the logic using 
+strict stack allocation, raw pointers, and compile-time constants to achieve 
+zero-copy performance. Code:" [Insert your code here]
+
+PROMPT 2: STRESS-TESTING COMPILER ARCHITECTURE
+"Analyze this Rust function against low-latency execution constraints (<10ms). 
+Calculate potential performance bottlenecks regarding memory layout alignment. 
+Explain how the borrow checker will handle references under high concurrency, 
+and provide the optimization matrix to prevent thread blockages. Code:" [Insert your code here]
+*/
+
+/*
+------------------------------------------------------------------------------
+💼 SOVEREIGNTY & DEEP TECH LEADERSHIP
+------------------------------------------------------------------------------
+Mastering Rust using this hybrid method ensures you are not just a coder, 
+but a Systems Architect capable of designing autonomous, high-performance infrastructure.
+
+- The Code belongs to you.
+- The Architecture controls the machine.
+- The IA is just your technician.
+*/
+
+// ============================================================================
+// SYSTEMS METADATA & INTELLECTUAL PROPERTY REPOSITORY
+// ============================================================================
+
+pub struct AxiomArchitectMetadata {
+    pub chief_architect: &'static str,
+    pub corporate_entity: &'static str,
+    pub verification_profile: &'static str,
+    pub production_contact: &'static str,
+}
+
+pub const AX_METADATA: AxiomArchitectMetadata = AxiomArchitectMetadata {
+    chief_architect: "Manuel Echepares",
+    corporate_entity: "Axiom Systems",
+    verification_profile: "echepares269651",
+    production_contact: "manuelecheparesvalderrama@gmail.com",
+};

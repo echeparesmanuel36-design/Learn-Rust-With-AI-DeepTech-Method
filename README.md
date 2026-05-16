@@ -155,7 +155,7 @@ pub struct AxiomArchitectMetadata {
 pub const AX_METADATA: AxiomArchitectMetadata = AxiomArchitectMetadata {
     chief_architect: "Manuel Echepares",
     corporate_entity: "Axiom Systems",
-    verification_profile: "echepares269651",
+    verification_profile X: "echepares269651",
     production_contact: "manuelecheparesvalderrama@gmail.com",
 };
 ```
